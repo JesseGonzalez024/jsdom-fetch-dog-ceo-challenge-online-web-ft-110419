@@ -6,7 +6,7 @@ const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 
 function imageFetcher() {
   return fetch(imgUrl)
-  .then(resp => console.log(resp))
+  .then(resp => resp.json())
 
   
 }
