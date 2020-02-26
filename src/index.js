@@ -24,3 +24,22 @@ function renderImage(json) {
   })
 }
 
+function renderBreeds(json){
+    let breeds = json.message
+    for(breed in breeds) {
+      let element = document.createElement("li")
+      element.textContent = breed
+      document.querySelector('#dog-breeds').appendChild(element)
+      element.addEventListener('click', changeColor) 
+  }
+}
+
+function changeColor(event){
+    event.target.style.color = 'red'
+
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+    fetchImages()
+    fetchBreeds()
+})
