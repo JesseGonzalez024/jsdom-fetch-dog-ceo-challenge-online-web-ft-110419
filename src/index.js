@@ -17,5 +17,5 @@ function breedFetcher() {
 }
 
 function renderImage(json) {
-  console.log(json.message)
+  console.log(json)
 }
