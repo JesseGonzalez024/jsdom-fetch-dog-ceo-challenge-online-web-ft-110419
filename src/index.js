@@ -17,5 +17,10 @@ function breedFetcher() {
 }
 
 function renderImage(json) {
-  console.log(json)
+  json.message.forEach(link => {
+    let image = document.createElement("img")
+    image.src = link
+    document.querySelector('#dog-image-container').appendChild(image)
+  })
 }
+
