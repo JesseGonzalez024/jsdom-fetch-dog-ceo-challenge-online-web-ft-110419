@@ -40,6 +40,6 @@ function changeColor(event){
 }
 
 document.addEventListener('DOMContentLoaded', function(){
-    fetchImages()
+    fetchImage()
     fetchBreeds()
 })
